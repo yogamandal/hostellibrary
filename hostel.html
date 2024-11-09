@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostel Library Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Hostel Library Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Books</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Roomno</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <h2>Search for a Book</h2>
+        <form action="#">
+            <input type="text" placeholder="Search by title, author..." name="search">
+            <button type="submit">Search</button>
+        </form>
+    </section>
+
+    <!-- Book List Section -->
+    <section class="book-list">
+        <h2>Available Books</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Genre</th>
+                    <th>Availability</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Operating System</td>
+                    <td>Rohit Khurana</td>
+                    <td>Computer Science</td>
+                    <td>Available</td>
+                </tr>
+                <tr>
+                    <td> Data Base and Management System</td>
+                    <td>hari ram chaudhary</td>
+                    <td>computer Science</td>
+                    <td>Checked Out</td>
+                </tr>
+                <tr>
+                    <td>Data Structures and Algorithms</td>
+                    <td>mahabir</td>
+                    <td>Computer Science</td>
+                    <td>Available</td>
+                </tr>
+                <tr>
+                    <td>classical meachanics</td>
+                    <td>pintu parsad</td>
+                    <td>meachanics</td>
+                    <td>Available</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Hostel Library Management System | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
+
+
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background-color: #4CAF50;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Search Section */
+.search-section {
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.search-section form {
+    margin-top: 10px;
+}
+
+.search-section input[type="text"] {
+    padding: 10px;
+    width: 60%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-section button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-section button:hover {
+    background-color: #45a049;
+}
+
+/* Book List Section */
+.book-list {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.book-list h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.book-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.book-list table th, .book-list table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.book-list table th {
+    background-color: #f4f4f9;
+    font-weight: bold;
+}
+
+.book-list table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
